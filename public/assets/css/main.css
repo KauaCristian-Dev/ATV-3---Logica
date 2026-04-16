@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    min-height: 100vh;
+    background-color: #e7efec;
+    padding: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 41.25rem;
+    border-radius: 0.625rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bolder;
+}
+
+
+.title .icon{
+    width: 3rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.helper-text {
+    margin: 0;
+    text-align: center;
+    color: #475569;
+}
+
+.sena-input {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #cbd5e1;
+}
+
+.result {
+    min-height: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+}
+
+.result.error {
+    background-color: #fef2f2;
+    color: #991b1b;
+}
+
+.result.loading {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+}
+
+.result.success {
+    background-color: #f8fafc;
+    border: 0.0625rem solid #e2e8f0;
+    color: #203870;
+}
+
+.sena-list-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sena-row-balls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5fffb, #e6fff5);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.875rem;
+    border: 0.0625rem solid #e2e8f0;
+}
+
+.sena-ball {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #2b3e94, #0f0280);
+    ;
+    font-weight: 700;
+    box-shadow: 0 0.35rem 0.85rem rgba(0, 79, 248, 0.411);
+    color: #fff;
+}
